@@ -24,3 +24,5 @@ for i in range (0,n):
     # inner loop will execute n times
     for j in range (0,n):
         print ('i value is :  %d and J value is : %d' %(i,j))
+
+# total time = c0 + c1n +c2n2 = o(n2)
