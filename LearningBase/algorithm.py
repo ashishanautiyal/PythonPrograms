@@ -1,0 +1,27 @@
+#!usr/binenv python
+
+from Queue import PriorityQue
+
+class State(object):
+    def __init__(self, value, parent, start = 0 , goal = 0 ):
+        self.children = []
+        self.parent = parent
+        self.value = value
+        self.dist = 0
+        if (parent):
+            self.path = parent.path[:]
+            self.path.append(value)
+            self.start = parent.start
+            self.goal = parent.goal
+        else:
+            self.path = [value]
+            self.start = start
+            self.goal = goal
+    def GetDist(self):
+        pass
+    def CreateChildren(self):
+        pass
+
+class State_String(State):
+    def __init__(self, value, parent, start = 0):
+        pass
